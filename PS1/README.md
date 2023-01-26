@@ -1,17 +1,17 @@
-# Problem Set 1
+## Problem Set 1
 
-## Problem 1.1 Can you think of new objections arising from developments since he wrote the paper?
+### Problem 1.1 Can you think of new objections arising from developments since he wrote the paper?
 - Since the public of Computing Machinery and Intelligence there have been many new objections arising about 
 Artificial Intelligence. One of the biggest concerns is that will one days AI would take over human jobs? 
-The answer might be yes since AI technology is development more advance as time goes by. As for right now, there are many evident that AI is taking over human jobs. For example, self-driving cars, self-checkout machines, and many more.
+The answer is yes but not completely since AI technology is development more advance as time goes by. As for right now, there are many evident that AI is taking over human jobs. For example, self-driving cars, self-checkout machines, and many more.
 
-## Problem 1.2 Are reflexes intelligent?
- - No, since reflex is a behavior that is developed as time goes by. It is a behavior that is not learned but is developed by experience. So reflex is not intelligent.
+### Problem 1.2 Are reflexes intelligent?
+ - No, since reflex is a behavior that is developed as time goes by. It is a behavior that is not learned but is developed from experience. So reflex is not intelligent.
 
- ## Problem 1.3 "Surely computers cannot be intelligent-they can do only what their programmers tell them." Is the latter statement true, and does it imply former?
+### Problem 1.3 "Surely computers cannot be intelligent-they can do only what their programmers tell them." Is the latter statement true, and does it imply former?
  - This statement would  be true during the time of this paper being written. But nowaday, AI is more advance and can learn  from experience to perform better. So if we consider the statement in the present time it would be false.
 
- ## Problem 1.4 State of the Art in AI
+### Problem 1.4 State of the Art in AI
 h. Writing an intentinally funny story.
     - Yes, there are AIs that can write funny story.
     - Example: AI Dungeon
@@ -19,7 +19,7 @@ j. Translating spoken English into spoken Swedish in real time.
     - Yes, there are AIs that can translate spoken English into spoken Swedish in real time.
     - Example: Google Translate
 
- ## Problem 1.5
+### Problem 1.5
  ```python
 import random
 #Create Add fuction
@@ -44,7 +44,7 @@ def main():
             break
 main()
 ```
-### Output
+#### Output
 ```
 Enter a number: 5
 Enter a number: 3
@@ -63,7 +63,7 @@ Do you want to add another two numbers? (y/n)
 n
 ```
 
-## Problem 1.6
+### Problem 1.6
 ```
 a. Toss a coin 32 times and record the outcome.
 b. Compute the experimentally observed probability of heads over tosses 2 throught 21, inclusive (20 outcomes).
