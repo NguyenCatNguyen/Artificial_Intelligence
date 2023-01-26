@@ -63,14 +63,31 @@ def Markov_chain(data):
     TH_prob = TH / (TH + TT)
     TT_prob = TT / (TH + TT)
     # Predict the next 10 flips based on the probability of the first 21 flips
+    Predict = []
+    #Use the last flip to predict the next flip
+    x = 0
+    Last = data[21]
+    while x != 10:
+        if Last == "H":
+            if random.random() < HH_prob:
+                Predict.append("T")
+                Last = "T"
+            else:
+                Predict.append("H")
+                Last = "H"
+        elif Last == "T":
+            if random.random() < TH_prob:
+                Predict.append("H")
+                Last = "H"
+            else:
+                Predict.append("T")
+                Last = "T"
+        x += 1
     print("The next 10 flips are: ")
-    i = 1
-    while i != 11:
-        
-
-    
+    print(Predict)
 
 data = ["T T T T H H H T T H T H T H T T T T H H H T H H H T H T H T H H"]
 set = data[0].split()
 Markov_chain(set)
+
 
