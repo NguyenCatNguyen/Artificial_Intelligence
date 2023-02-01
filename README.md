@@ -56,3 +56,14 @@ evinroment through *actuators*.
 - QUESTION: How much of your intelligience is due to your environment? Is it due to your environment or your genes?
 
 ### Configuration space of agent/system
+
+
+## Lecture 4: Intelligent Agent
+- `Intelligent Agent` - "Do the right thing"
+
+
+
+
+## Chapter 2 Intelligent Agent
+### 2.3 The Nature of Enviroment
+- `Task Enviroments` is 
