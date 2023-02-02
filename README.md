@@ -1,8 +1,8 @@
 # Artificial_Intelligence
- Daily note about AI Lessons
+ The purpose of this repo is for daily note about AI Lessons
 
+## Index
 
-## The turning test
 
 
 ## Lecture 3: Rational Agents
@@ -64,11 +64,3 @@ evinroment through *actuators*.
 
 
 
-## Chapter 2 Intelligent Agent
-### 2.3 The Nature of Enviroment
-- `Task Enviroments` is 
-- `PEAS` is a description of the task enviroment
-    - Performance Measure is the goal of the agent
-    - Environment is the enviroment that the agent is in.
-    - Actuators is the action that the agent can do.
-    - Sensors is the input that the agent can get.
