@@ -64,3 +64,44 @@ evinroment through *actuators*.
 
 
 
+## Lecture: 
+- `A*` is complete and optimal
+    - if heristic is admissible 
+        - h(n) <= h*(n)
+    - if heristic is consistent
+        - h(n) <= c(n, n') + h(n')
+        - if n' is reachable from n
+### Note  
+- Why not use `h*`?
+    - `h*` is not always known
+    - `h*` is not always computable
+    -  Too Expensive to compute
+- So in general, we want the most informative heuristic that we have time to compute.
+- Limited search to obtain better heuristic
+
+
+
+### 2.1 Agents and Enviroments
+- An **agent** is anything that can be viewed as perceiving its **enviroment** through **sensors** and acting upon that enviroment through its **actuators**.
+    - Environment: everything outside the agent.
+    - Sensors: input from the environment.
+    - Actuators: output to the environment.
+- `Percept` the content an agent's sensors are perceiving.
+- An agent's **percet sequence** is the complete history of all percepts it has ever received.
+```
+- An agent's choice of action at any given instant can depend on its built-in knowledge and on the entire percept seqquence observed to date.
+```
+- An agent's behavior is described by the `agent function` that maps any given percept sequence to an action.
+
+![Agent](Graphs/Agents_interact.png)
+- `Tabulating` the agent function that describes any given agent's.
+- The agent function for an atificial agent will be implemented by an **agent program**.
+- To illustrate these ideas, we have a simple example of a vacuum cleaner agent.
+
+![Vacuum](Graphs/The_Vaccuum.png)
+### 2.2 Good Behavior: The Concept of Rationality
+- A `ration agent` is one that does the right thing.
+ 
+ #### Performance Measure
+    - A `performance measure` is a numerical function of the agent's performance.
+    - AI is generally stuck to one notion called `consequentialism` which is the idea that the right thing to do is the thing that produces the best consequences.
