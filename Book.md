@@ -37,3 +37,14 @@
     - Environment is the enviroment that the agent is in.
     - Actuators is the action that the agent can do.
     - Sensors is the input that the agent can get.
+
+### Chapter 3 Solving Problems By Searching
+```
+In which we see how an agent can look ahead to find a sequence of actions that will eventually achieve its goal.
+```
+- When the correct action to take is not immediately obvious, an agent may need to plan ahead; to cosider a *sequence* of actions that form a path to a goal state. Such an agent is called a ` problem-solving agent`
+#### 3.1 Problem-Solving Agents
+- When an agent has no information - the enviroment is unknow, the agent can do no better than to execute one of the actions at random
+
+-`Goal formulation`: The agent adopts the *goal* of reaching Bucharest. Goals organize behavior by limiting the objectives and hence the actions to be considered. 
+- `Problem formulation`: The agent devises a descripti
