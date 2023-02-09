@@ -48,3 +48,6 @@ In which we see how an agent can look ahead to find a sequence of actions that w
 
 -`Goal formulation`: The agent adopts the *goal* of reaching Bucharest. Goals organize behavior by limiting the objectives and hence the actions to be considered. 
 - `Problem formulation`: The agent devises a descripti
+### 3.3 Search Algorithms
+#### 3.3.1 Best-First Search
+- `Best-First Search` is a general-purpose algorithm for finding a path through a graph to a goal node.
