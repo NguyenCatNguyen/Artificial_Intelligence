@@ -51,3 +51,17 @@ In which we see how an agent can look ahead to find a sequence of actions that w
 ### 3.3 Search Algorithms
 #### 3.3.1 Best-First Search
 - `Best-First Search` is a general-purpose algorithm for finding a path through a graph to a goal node.
+
+
+
+## Chapter 4 Search in Complex Enviroments
+### 4.1 Local Search and Optimization Problems.
+- `Local search` algorithms operate by searching from a start state to neighboring states, without keeping track of the paths, nor the set of states that have been reached. 
+    - CONS:
+        - They are not systematic(có hệ thống). 
+        - They might never explore a portion of the search space where a solution are resside.
+    - PROS: however, they have two advantages.
+        - They use less memory than other algorithms.
+        - They can often find reasonable solutions in large or infinite state spaces for which systematic algorithms are unsuitable.
+- `Optimization problems` are problems in which the goal is to find the best solution from a set of possible solutions.
+
