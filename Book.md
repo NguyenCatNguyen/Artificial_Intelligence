@@ -63,5 +63,15 @@ In which we see how an agent can look ahead to find a sequence of actions that w
     - PROS: however, they have two advantages.
         - They use less memory than other algorithms.
         - They can often find reasonable solutions in large or infinite state spaces for which systematic algorithms are unsuitable.
+
+- Local search algorithms are often used to solve `optimization problems`, in which the aim is to find the best state according to an objective function.
+
+
+
 - `Optimization problems` are problems in which the goal is to find the best solution from a set of possible solutions.
 
+#### 4.1.4 Evolutionary algorithms.
+
+
+
+## Chapter 6 Adversarial Search and Games
