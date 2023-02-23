@@ -2,6 +2,10 @@
  The purpose of this repo is for daily note about AI Lessons
 
 ## Index
+- [Lecture 1: Introduction](#lecture-1-introduction)
+- [Lecture 2: Turning Test](#lecture-2-turning-test)
+- [Lecture 3: Rational Agents](#lecture-3-rational-agents)
+- [Lecture 4: Intelligent Agent](#lecture-4-intelligent-agent)
 
 
 
@@ -105,3 +109,34 @@ evinroment through *actuators*.
  #### Performance Measure
     - A `performance measure` is a numerical function of the agent's performance.
     - AI is generally stuck to one notion called `consequentialism` which is the idea that the right thing to do is the thing that produces the best consequences.
+
+
+
+
+
+
+
+## Lecture 2: Turning Test
+--- Maximize your expected utility ---
+### 1.1 The Turing Test
+- `Turing Test` - "Can you tell the difference between a human and a machine?"
+### Wozniak's Coffee Test
+- Can a robot come into your house and make you a cup of coffee?
+- A total turning test
+### Boundary of Turing Test
+- Philosophical:
+    - Weak AI: Can machines act intelligently?
+    - Strong AI: Can machines actually think?
+- Problem with AI:
+    1. One people "Understand" how an AI works, it no longer seems intelligent.
+    2. Intelligence is redefine as what set it apart from a computer.
+    3. If you can't define
+
+
+
+
+## Adversarial Search 1
+### Why do people study games?
+- Can compare performance to humans
+- Can be used to test AI algorithms
+- 
