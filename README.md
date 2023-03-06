@@ -140,3 +140,9 @@ evinroment through *actuators*.
 - Can compare performance to humans
 - Can be used to test AI algorithms
 - 
+
+
+## A Wumpus World
+- A wumpus world is a 2D grid of rooms.
+
+- `Wumpus` 

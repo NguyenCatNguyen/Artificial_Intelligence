@@ -23,6 +23,10 @@
     - Sensors: input from the environment.
     - Actuators: output to the environment.
 
+```
+An agent's choice of action at any given instant can depend on its built- in knowledge and on the entire percept sequence observed to date, but not on anything it hasn't perceived
+```
+
 
 
 
@@ -30,7 +34,7 @@
 
 
     
-### 2.3 The Nature of Enviroment
+#### 2.3 The Nature of Enviroment
 - `Task Enviroments` is 
 - `PEAS` is a description of the task enviroment
     - Performance Measure is the goal of the agent
@@ -47,8 +51,10 @@ In which we see how an agent can look ahead to find a sequence of actions that w
 - When an agent has no information - the enviroment is unknow, the agent can do no better than to execute one of the actions at random
 
 -`Goal formulation`: The agent adopts the *goal* of reaching Bucharest. Goals organize behavior by limiting the objectives and hence the actions to be considered. 
-- `Problem formulation`: The agent devises a descripti
+- `Problem formulation`: The agent devises a description of the states and actions necessary to reach the goal.
+- 
 ### 3.3 Search Algorithms
+- A `Search algorithm` takes a search problem as input and returns a solution, or an indication of failure.
 #### 3.3.1 Best-First Search
 - `Best-First Search` is a general-purpose algorithm for finding a path through a graph to a goal node.
 
