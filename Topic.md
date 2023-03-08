@@ -45,3 +45,30 @@
 - 2 Mar:
     - R&N 11.6,4 / 18.1 / 4.4
     - Planning & Acting in the Real World 
+
+## Problem Set
+- PS1: 
+
+R&N 1.1-5, 27.1-3, Turing’s “Computing Machinery and Intelligence” (linked)
+● Some of these problems are from previous editions of R&N and other books, so use my
+problem numbering and disregard any numbers that may appear in problem scans
+
+- PS2:
+
+R&N 2.1-4, Braitenberg's Vehicles, pp. 1-42 (linked)
+
+- PS3: 
+
+R&N 3.1-6
+Search Problem: 
+
+
+
+## Review
+- Read chapter summaries
+- 4 to 5 questions
+- Solving problem
+-
+
+
+##
