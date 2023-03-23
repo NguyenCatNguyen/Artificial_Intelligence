@@ -146,3 +146,18 @@ evinroment through *actuators*.
 - A wumpus world is a 2D grid of rooms.
 
 - `Wumpus` 
+
+
+# After Midterm
+
+# Uncertainty
+- Why study probability?
+    - It is the language of uncertainty.
+    - It is the language of science.
+    - It is the language of AI.
+
+- Where probabilities come from?
+    - Frequentist View: do experiments and count results
+    - Objectivist View: uncertainty is a fundamental property of the universe
+    - Subjectivist View: the arise from beliefs
+        - Probability theory a tool for organizing, and reasoning with your beliefs.
