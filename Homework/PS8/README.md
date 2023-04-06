@@ -21,23 +21,32 @@ P(D| !B, !C) = 0
 ```
 Solution:
 ```
+- Using the chain rule we can find:
 P(!A) = 1 - P(A) = 1 - 0.5 = 0.5
 P(B)= P(B|A)*P(A) + P(B|!A)XP(!A) = 1*0.5 + 0.5*0.5 = 0.75
 P(!B) = 1 - P(B) = 1 - 0.75 = 0.25
 P(C)= P(C|A)*P(A) + P(C|!A)XP(!A) = 1*0.5 + 0.5*0.5 = 0.75
 P(!C) = 1 - P(C) = 1 - 0.75 = 0.25
+
 - Since B and C are independent we can find:
 P(B,C) = P(B)*P(C) = 0.75*0.75 = 0.5625
 P(!B,!C) = P(!B)*P(!C) = 0.25*0.25 = 0.0625
 P(B,!C) = P(B)*P(!C) = 0.75*0.25 = 0.1875
 P(!B,C) = P(!B)*P(C) = 0.25*0.75 = 0.1875
+
 - Now we can find P(D):
-P(D) = P(D|B,C)*P(B)*P(C) + P(D|B,!C)*P(B)*P(!C) + P(D|!B,C)*P(!B)*P(C) + P(D|!B,!C)*P(!B)*P(!C) = 1*0.75*0.75 + 0.5*0.75*0.25 + 0.5*0.25*0.75 + 0*0.25*0.25 = 0.5625
+P(D) = P(D|B,C)*P(B)*P(C) + P(D|B,!C)*P(B)*P(!C) + P(D|!B,C)*P(!B)*P(C) + P(D|!B,!C)*P(!B)*P(!C) = 0.5625*0.75*0.75 + 0.1875*0.75*0.25 + 0.1875*0.25*0.75 + 0.0625*0.25*0.25 = 0.375
+
 - Now we can find P(D|A):
 P(D|A) = P(D|B,C)*P(B|A)*P(C|A) + P(D|B,!C)*P(B|A)*P(!C|A) + P(D|!B,C)*P(!B|A)*P(C|A) + P(D|!B,!C)*P(!B|A)*P(!C|A) = 1*1*1 + 0.5*1*0.5 + 0.5*0*1 + 0*0*0.5 = 0.75
-- Now we can find P(A|D):
-P(A|D) = P(D|A)*P(A)/P(D) = 0.75*0.5/0.5625 = 0.6666666666666666
 
+- Now we can find P(A|D):
+P(A|D) = P(D|A)*P(A)/P(D) = 0.75*0.5/0.375 = 1
+```
+
+- But in the case if A and D are independent:
+```
+P(A|D) = P(A) = 0.5
 ```
 
 ## Problem 3:
@@ -151,3 +160,41 @@ P(!J,!M,B,E) ~= 0.000001
 - The output is the same as the answer in problem 3.
 ```
 - Since the estimate is based on a random sampling technique, the estimate will be different each time the code is run. But the estimate will be close to the actual probability.
+
+## Problem 5:
+```python
+from random import random
+
+TRIALS = 10**6
+A = 1/2  # prior probability of A
+
+evidence = 0
+query = 0
+pdenomall = []
+pdnumall = []
+
+for trial in range(1, TRIALS + 1):
+    randA, randB, randC = random(), random(), random()
+    A_val = randA < A  # sample A
+    B_val = randB < (1 if A_val else 1/2)  # sample B
+    C_val = randC < (1 if A_val else 1/2)  # sample C
+    D_val = B_val and C_val  # sample D
+    
+    # compute denominator P(D)
+    pdenom = (1 if A_val else 1/2) * (1 if B_val else 1/2) * (1 if C_val else 1/2)
+    pdenomall.append(pdenom)
+    
+    # compute numerator P(D|A) * P(A)
+    if A_val == True and D_val == True:
+        pdnum = 1 * A_val
+        pdnumall.append(pdnum)
+    
+    # increment evidence counter if D is observed
+    if D_val == True:
+        evidence += 1
+        # increment query counter if A is not true
+        if A_val == False:
+            query += 1
+    
+print("P(A|D) ~=", sum(pdnumall)/sum(pdenomall))
+```
