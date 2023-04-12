@@ -198,3 +198,4 @@ for trial in range(1, TRIALS + 1):
     
 print("P(A|D) ~=", sum(pdnumall)/sum(pdenomall))
 ```
+- Since my code using the ran
