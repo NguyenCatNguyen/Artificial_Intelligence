@@ -335,39 +335,57 @@ best predict the rep.’s party by their vote on just one particular bill?
 
 def DecisionStump(table):
     Atri = []
-    for i in range(2,17):
-        Atri.append(Gain(i,table)) #list of gain for each attribute
-        print(f"Atribute {i} Gain {Gain(i,table)}")
+    # Keep track of the number of Dems and Reps
+    Dem = 0
+    Rep = 0
+    for col in table:
+        if col[0] ==1:
+            Dem +=1
+        else:
+            Rep +=1
+    # Find the attribute that maximizes the information gain
+    for i in range(17):
+        Atri.append(Gain(i,table))
+    Atri = np.array(Atri)
+    Atri = np.argsort(Atri)
+    Atri = Atri[::-1]
+    # Count how many of each classification appear in each branch
+    for i in range(17):
+        pos = 0
+        neg = 0
+        for col in table:
+            if col[Atri[i]]==1:
+                pos+=1
+            else:
+                neg+=1
+        p = pos/(pos+neg)
+        n = neg/(pos+neg)
+        print(f"Attribute {Atri[i]} has {p} positive and {n} negative")
+    # Compute the classifications you should use depending on that attribute's value    
+    for i in range(17):
+        pos = 0
+        neg = 0
+        for col in table:
+            if col[Atri[i]]==1:
+                pos+=1
+            else:
+                neg+=1
+        p = pos/(pos+neg)
+        n = neg/(pos+neg)
+        if p > n:
+            print(f"Attribute {Atri[i]} has {p} positive and {n} negative, so we predict positive")
+        else:
+            print(f"Attribute {Atri[i]} has {p} positive and {n} negative, so we predict negative")
+    return Atri
 
-    print(f"Max Gain {max(Atri)}")
-
+    
 DecisionStump(table)
-    
-    
 
 
 
 
 """
-1. Title: 1984 United States Congressional Voting Records Database
-# 
-# 2. Source Information:
-#     (a) Source:  Congressional Quarterly Almanac, 98th Congress, 
-#                  2nd session 1984, Volume XL: Congressional Quarterly Inc. 
-#                  Washington, D.C., 1985.
-#     (b) Donor: Jeff Schlimmer (Jeffrey.Schlimmer@a.gp.cs.cmu.edu)
-#     (c) Date: 27 April 1987 
-# 
-# 4. Relevant Information:
-#       This data set includes votes for each of the U.S. House of
-#       Representatives Congressmen on the 16 key votes identified by the
-#       CQA.  The CQA lists nine different types of votes: voted for, paired
-#       for, and announced for (these three simplified to yea), voted
-#       against, paired against, and announced against (these three
-#       simplified to nay), voted present, voted present to avoid conflict
-#       of interest, and did not vote or otherwise make a position known
-#       (these three simplified to an unknown disposition).
-#
+1. 
 # 5. Number of Instances: 435 (267 democrats, 168 republicans)
 #
 # MSB NOTE: Any voting record (instance) that contained >=1 unknowns was removed.
