@@ -96,9 +96,11 @@ def DecisionStump(table):
         p = pos/(pos+neg)
         n = neg/(pos+neg)
         if p > n:
-            print(f"Attribute {Atri[i]} has {p} positive and {n} negative, so we predict positive")
+            print(f"Attribute {Atri[i]} has {p} positive and {n} 
+            negative, so we predict positive")
         else:
-            print(f"Attribute {Atri[i]} has {p} positive and {n} negative, so we predict negative")
+            print(f"Attribute {Atri[i]} has {p} positive and {n} 
+            negative, so we predict negative")
     return Atri
 
 ```
