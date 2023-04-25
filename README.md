@@ -161,3 +161,16 @@ evinroment through *actuators*.
     - Objectivist View: uncertainty is a fundamental property of the universe
     - Subjectivist View: the arise from beliefs
         - Probability theory a tool for organizing, and reasoning with your beliefs.
+
+# Game Theory
+## Multi-agent Decision Making
+- `Game Theory` is the study of multi-agent decision making.
+- Models of conflict and cooperation between rational decision makers.
+- Used in economics, political science, biology, computer science, and more.
+## Game Theory Setup
+- Multi-player games with simultaneous actions.
+- Two main aspects:
+  - Agent Design: What is the best strategy against a rational player, and what is the best return for each agent
+  - Mechanism Design: Define rules/protocols so collective good is maximized when each ageent maximizes its own ultility
+- Element: players, actions, payoffs
+- 
