@@ -128,6 +128,8 @@
 ### A. 
 - Training the perceptron with alpha = 1
 - Initial weights: w1 = 0, w2 = 0, w3 = 0
+
+
 | Input | Output | Prediction | New Weights |
 |-------|--------|------------|-------------|
 | 1,0,0 | 1      | 0          | 1,0,0,1     |
